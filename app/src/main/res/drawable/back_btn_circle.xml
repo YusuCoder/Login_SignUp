@@ -5,7 +5,7 @@
 
         <shape android:shape="oval">
 
-            <solid android:color="@color/DarkRed"/>
+            <solid android:color="@color/white"/>
 
 
         </shape>

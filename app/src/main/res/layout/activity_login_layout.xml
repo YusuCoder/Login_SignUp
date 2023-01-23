@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/DarkSilver"
     tools:context=".login_layout">
 
 
@@ -17,6 +18,7 @@
             android:layout_width="200dp"
             android:layout_height="200dp"
             android:background="@drawable/back_btn_circle"
+            android:elevation="5dp"
             android:layout_marginStart="-40dp"
             android:layout_marginTop="-40dp">
 
@@ -35,7 +37,7 @@
                 android:layout_toEndOf="@+id/backBtn"
                 android:layout_centerVertical="true"
                 android:text="Back"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:transitionName="backTxt"
                 android:textSize="20sp"
                 android:textStyle="bold"
@@ -49,7 +51,7 @@
                 android:layout_centerHorizontal="true"
                 android:text="Login"
                 android:transitionName="Sign_up"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textSize="28sp"
                 android:textStyle="bold"
                 />
@@ -68,6 +70,7 @@
             android:layout_height="500dp"
             android:layout_alignParentBottom="true"
             android:transitionName="red_back"
+            android:elevation="10dp"
             android:background="@drawable/rectangle_down"
             android:orientation="vertical">
 
@@ -79,7 +82,7 @@
                 android:text="Login"
                 android:textStyle="bold"
                 android:transitionName="SignUpLogo"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:layout_gravity="center"
                 android:layout_marginTop="40dp"
                 android:textSize="38sp"/>
@@ -90,7 +93,7 @@
                 android:layout_height="wrap_content"
                 android:text="Sign in to continue"
                 android:textSize="12sp"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:transitionName="description_login"
                 android:layout_gravity="center"
                 android:layout_marginTop="1dp"/>
@@ -111,7 +114,7 @@
                     android:textSize="14sp"
                     android:transitionName="emailTxt"
                     android:text="Email"
-                    android:textColor="@color/white"/>
+                    android:textColor="@color/black"/>
 
                 <EditText
                     android:id="@+id/email_box_login"
@@ -133,7 +136,7 @@
                     android:textSize="14sp"
                     android:text="Password"
                     android:layout_marginTop="20dp"
-                    android:textColor="@color/white"/>
+                    android:textColor="@color/black"/>
 
                 <EditText
                     android:id="@+id/password_box_login"
@@ -172,7 +175,7 @@
                     android:id="@+id/forgotpwd"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="@color/white"
+                    android:textColor="@color/black"
                     android:transitionName="forgotPwd"
                     android:textSize="14sp"
                     android:text="Forgot password?"
@@ -180,13 +183,15 @@
                     android:layout_marginTop="10dp"/>
 
 
-                <TextView
+                <androidx.appcompat.widget.AppCompatButton
                     android:id="@+id/register_txt"
-                    android:layout_width="wrap_content"
+                    android:layout_width="280dp"
                     android:layout_height="wrap_content"
                     android:text="Register here"
-                    android:textColor="@color/white"
+                    android:textColor="@color/black"
+                    android:background="#00000000"
                     android:textSize="16sp"
+                    android:textAllCaps="false"
                     android:layout_gravity="center"
                     android:transitionName="RegisterHere"
                     android:layout_marginTop="10dp"/>

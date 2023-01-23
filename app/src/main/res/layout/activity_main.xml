@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/DarkSilver"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -61,6 +62,7 @@
             android:id="@+id/buttom_panel"
             android:layout_width="match_parent"
             android:layout_height="250dp"
+            android:elevation="10dp"
             android:background="@drawable/rectangle_down"
             android:layout_alignParentBottom="true"
             android:orientation="vertical"

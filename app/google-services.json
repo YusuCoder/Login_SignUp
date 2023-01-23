@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "78082404473",
+    "project_id": "loginsignup-c8bfc",
+    "storage_bucket": "loginsignup-c8bfc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:78082404473:android:318ca022faad8172fda4a8",
+        "android_client_info": {
+          "package_name": "com.example.loginfirbase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "78082404473-nmt4q84b30kgpiubk3cj7lh5gi4v4c7s.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDrjIw8ffFfLXraIKF_hanYBM550PeKDV0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "78082404473-nmt4q84b30kgpiubk3cj7lh5gi4v4c7s.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

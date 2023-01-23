@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/DarkSilver"
+    tools:context=".Registration3">
+
+
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="@drawable/back_btn_circle"
+        android:layout_marginStart="-40dp"
+        android:elevation="5dp"
+        android:layout_marginTop="-40dp">
+
+        <ImageView
+            android:id="@+id/backBtn2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_centerVertical="true"
+            android:transitionName="backIcon"
+            android:layout_marginStart="50dp"
+            android:background="@drawable/ic_baseline_arrow_back_24"/>
+
+        <TextView
+            android:id="@+id/back_txt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/backBtn2"
+            android:layout_centerVertical="true"
+            android:text="Back"
+            android:textColor="@color/black"
+            android:transitionName="backTxt"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginStart="5dp"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/backBtn2"
+            android:layout_centerHorizontal="true"
+            android:text="SignUp"
+            android:transitionName="Sign_up"
+            android:textColor="@color/black"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            />
+
+
+
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="560dp"
+        android:background="@drawable/rectangle_down"
+        android:transitionName="red_back"
+        android:elevation="10dp"
+        android:layout_alignParentBottom="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/register_date_txt_middle2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="SignUp"
+                android:textStyle="bold"
+                android:transitionName="SignUpLogo"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:textSize="38sp"/>
+
+            <TextView
+                android:id="@+id/create_date_new_acc2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Please choose your gender"
+                android:textSize="12sp"
+                android:textColor="@color/black"
+                android:transitionName="description_login"
+                android:layout_gravity="center"
+                android:layout_marginTop="1dp"/>
+
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/black"
+                android:layout_margin="20dp"/>
+
+            <com.hbb20.CountryCodePicker
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:ccp_areaCodeDetectedCountry="true"
+                app:ccp_showFlag="true"
+                app:ccp_showNameCode="true"
+                app:ccp_showFullName="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:padding="5dp"
+                android:background="@drawable/black_border_ccp"/>
+
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/black_border_ccp"
+                android:textColor="@color/black"
+                android:hint="579300663"
+                android:drawablePadding="5dp"
+                android:textColorHint="#757575"
+                android:drawableStart="@drawable/ic_baseline_phone_24"
+                android:padding="12dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginTop="5dp"
+                android:inputType="phone"/>
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center">
+
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/sign_inBtn_date3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button"
+                    android:transitionName="LoginBtn"
+                    android:text="Register"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:textColor="@color/white"/>
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/login_btn_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/transparent"
+                    android:transitionName="LoginBtn"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:text="LogIn"
+                    android:textStyle="bold"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:textColor="@color/black"/>
+
+
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </ScrollView>
+
+</RelativeLayout>
